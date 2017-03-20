@@ -1,0 +1,565 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ESCOM SPORTS</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="MobileOptimized" content="true"/>
+    <meta name="handheldFriendly" content="true"/>
+    <link rel="stylesheet" href="css/flexboxgrid.css">    
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/morris.css">
+    <link rel="icon" href="logo-FUT.png" type="image/png">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+</head>
+<body>
+
+    <div id="page-content">
+        <header style="height:70px" id="topbar">
+            <div id="logo">
+                <h1 style="display: flex;justify-content: space-between;align-items: center;"><img src="logo-FUT.png" style="height:60px; margin-right:1rem;"/>Fútbol</h1>
+            </div>
+            <div id="topbar-op">
+                <nav>
+                    <!--<a href="#">About</a>
+                    <a href="#">Docs</a>
+                    <a href="#">Log</a>
+                    <a href="#">Help</a>
+                    <a href="#">Contact</a>-->
+                </nav>
+                <nav>
+                    <a href="#" id="notification">
+                        <i class="ti-bell" style="position:relative;">
+                            <span class="badge badge-danger" style="position:absolute; top:0;right:-15px;">32</span>
+                        </i>
+                    </a>
+                    <ul id="notifi">
+                        <li><a href="#notif1">
+                            <i class="ti-bell blue" style="position:relative;"></i>
+                            <h4>Notificación 1<br><small>Descripcion Notificación</small></h4>
+                        </a></li>
+                        <li><a href="#notif1">
+                            <i class="ti-bell yellow" style="position:relative;"></i>
+                            <h4>Notificación 2<br><small>Descripcion Notificación</small></h4>
+                        </a></li>
+                        <li><a href="#notif1">
+                            <i class="ti-bell green" style="position:relative;"></i>
+                            <h4>Notificación 3<br><small>Descripcion Notificación</small></h4>
+                        </a></li>
+                        <li><a href="#notif1">
+                            <i class="ti-bell purple" style="position:relative;"></i>
+                            <h4>Notificación 4<br><small>Descripcion Notificación</small></h4>
+                        </a></li>
+                        <li><a href="#notif1">
+                            <i class="ti-bell red" style="position:relative;"></i>
+                            <h4>Notificación 5<br><small>Descripcion Notificación</small></h4>
+                        </a></li>
+                        <li><a href="#notifications" style="background:#f7f7f7;justify-content: center;text-align: center;">
+                            <h4>See all (32) notifications<br><small>Clicking here</small></h4>
+                        </a></li>
+
+                    </ul>
+
+                    <a href="#" id="profile">
+                        <img src="profile.jpg" alt="">
+                    </a>
+                    <ul id="profil">
+                        <li><a href=""><i class="ti-user"></i>Perfil</a></li>
+                        <li><a href=""><i class="ti-settings"></i>Configuración</a></li>
+                        <li style="border-top: 1px solid #e5e5e5;"><a href=""><i class="ti-power-off"></i>Cerrar sesión</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="container">
+            <aside id="navigator">
+                <div id="user">
+                    <h3>
+                        Alejandro Hernández
+                        <small>Administrator</small>
+                    </h3>
+                    
+                </div>
+                <ul>
+                    <!--<li>
+                        <a href="#">
+                            <span><i class="ti-home"></i>Resumen</span>
+                        </a>
+                    </li>-->
+                    <li class="submenu active" >
+                        <a href="#">
+                            <span>
+                                <i class="ti-crown"></i>Torneos
+                            </span>
+                            <i class="ti-angle-right submenu-arrow"></i>
+                        </a>
+                        <ul class="submenu-content">
+                            <li class="active"><a href="#"><span><i class="ti-plus"></i>Nuevo Toreno</span></a></li>
+                            <li><a href="#"><span><i class="ti-eye"></i>Todos los Torneos</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu" >
+                        <a href="#">
+                            <span><i class="ti-medall"></i>Partidos</span>
+                            <i class="ti-angle-right submenu-arrow"></i>
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#"><span><i class="ti-plus"></i>Nuevo Partido</span></a></li>
+                            <li><a href="#"><span><i class="ti-eye"></i>Todos los partidos</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu" >
+                        <a href="#">
+                            <span><i class="ti-heart"></i>Equipos</span>
+                            <i class="ti-angle-right submenu-arrow"></i>
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#"><span><i class="ti-plus"></i>Nuevo Equipo</span></a></li>
+                            <li><a href="#"><span><i class="ti-eye"></i>Todos los Equipos</span></a></li>
+                        </ul>
+            
+                    </li>
+                    
+                    <li >
+                        <a href="#">
+                            <span><i class="ti-folder"></i>Solicitudes</span>
+                            
+                        </a>
+                    </li>
+                    <li class="submenu" >
+                        <a href="#">
+                            <span><i class="ti-user"></i>Usuarios</span>
+                            <i class="ti-angle-right submenu-arrow"></i>
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#"><span><i class="ti-plus"></i>Nuevo Usuario</span></a></li>
+                            <li><a href="#"><span><i class="ti-eye"></i>Todos los Usuarios</span></a></li>
+                            <li><a href="#"><span><i class="ti-medall"></i>Roles de Usuario</span></a></li>
+                        </ul>
+                        
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="ti-calendar"></i>Calendario</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                
+            </aside>
+            <!--<aside id="subnavigator">
+                <div class="title">
+                    <h3>Applications</h3>
+                </div>
+                <ul id="content-subm"></ul>
+                <div class="title">
+                    <h3>Favorites</h3>
+                </div>
+                <ul id="favorites-subm"></ul>
+            </aside>-->
+            <section id="content">
+                <div id="content-title">
+                    <h2>Elements</h2>
+                </div>
+                <div id="content-body">
+
+                    <div>
+                        <h3>Themify Icon</h3>
+                        <a href="https://themify.me/themify-icons">https://themify.me/themify-icons</a>
+                        <br><br>
+                    </div>
+
+                    <h3>Botones</h3>
+                    <button type="button" class="btn btn-white">White</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-warning btn-rounded">Warning</button>
+                    <button type="button" class="btn btn-danger btn-rounded">Danger</button>
+                    <button type="button" class="btn btn-dark btn-rounded">Dark</button>
+                    <br><br>
+                    
+                    <h3>Formulario</h3>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="control-label">Input</label>
+                                <div class="form-control-cont">
+                                    <input type="text" class="form-control full" value="Texto aqui">
+                                </div>
+                            </div>
+                        <div class="form-group">
+                            <label class="control-label" for="example-email">Correo</label>
+                            <div class="form-control-cont">
+                                <input type="email" id="example-email" name="example-email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Password</label>
+                            <div class="form-control-cont">
+                                <input type="password" class="form-control" value="password">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label >Placeholder</label>
+                            <div class="form-control-cont">
+                                <input type="text" class="form-control" placeholder="placeholder">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class=" control-label">Text-area</label>
+                            <div class="form-control-cont">
+                                <textarea class="form-control" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="control-label">Prop:Readonly</label>
+                            <div class="form-control-cont">
+                                <input type="text" class="form-control" readonly="" value="Readonly value">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Prop:Disabled</label>
+                            <div class="form-control-cont">
+                                <input type="text" class="form-control" disabled="" value="Disabled value">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Helping text</label>
+                            <div class="form-control-cont">
+                                <input type="text" class="form-control" placeholder="Helping text">
+                                <span class="help-block"><small>A block of help text that breaks onto a new line and may extend beyond one line.</small></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Input Select</label>
+                            <div class="form-control-cont">
+                                <select class="form-control full">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Multiple select</label>
+                            <div class="form-control-cont">
+                                <select multiple="" class="form-control full">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <div>
+                        <div>
+                            <div>
+                                
+                                
+                                <div class="checkbox">
+                                    <input id="checkbox0" type="checkbox">
+                                    <label for="checkbox0">
+                                        class: checkbox
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-custom">
+                                    <input id="checkbox111" type="checkbox">
+                                    <label for="checkbox111">
+                                        class: checkbox checkbox-custom
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-primary">
+                                    <input id="checkbox2" type="checkbox" checked="">
+                                    <label for="checkbox2">
+                                        class: checkbox checkbox-primary
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-success">
+                                    <input id="checkbox3" type="checkbox">
+                                    <label for="checkbox3">
+                                       class: checkbox checkbox-success
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-info">
+                                    <input id="checkbox4" type="checkbox">
+                                    <label for="checkbox4">
+                                        class: checkbox checkbox-info
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-warning">
+                                    <input id="checkbox5" type="checkbox" checked="">
+                                    <label for="checkbox5">
+                                        class: checkbox checkbox-warning
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-danger">
+                                    <input id="checkbox6" type="checkbox" checked="">
+                                    <label for="checkbox6">
+                                        class: checkbox checkbox-danger
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-dark">
+                                    <input id="checkbox6c" type="checkbox">
+                                    <label for="checkbox6c">
+                                        class: checkbox checkbox-dark
+                                    </label>
+                                </div>
+
+                                <div class="checkbox checkbox-single">
+                                    <input type="checkbox" id="singleCheckbox1" value="option1" aria-label="Single checkbox One">
+                                    <label>class: checkbox checkbox-single</label>
+                                </div>
+                                <div class="checkbox checkbox-primary checkbox-single">
+                                    <input type="checkbox" id="singleCheckbox2" value="option2" checked="" aria-label="Single checkbox Two">
+                                    <label>class: checkbox checkbox-primary checkbox-single</label>
+                                </div>
+
+                                <div class="checkbox checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label for="inlineCheckbox1"> class: checkbox checkbox-inline </label>
+                                </div>
+                                <div class="checkbox checkbox-success checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox2" value="option1" checked="">
+                                    <label for="inlineCheckbox2"> class: checkbox checkbox-success checkbox-inline </label>
+                                </div>
+                                <div class="checkbox checkbox-pink checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox3" value="option1">
+                                    <label for="inlineCheckbox3"> class: checkbox checkbox-pink checkbox-inline </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <div class="checkbox checkbox-custom checkbox-circle">
+                                    <input id="checkbox08" type="checkbox" checked="">
+                                    <label for="checkbox08">
+                                        class: checkbox checkbox-custom checkbox-circle
+                                    </label>
+                                </div>
+
+                                <div class="checkbox checkbox-circle">
+                                    <input id="checkbox7" type="checkbox">
+                                    <label for="checkbox7">
+                                        class: checkbox checkbox-circle
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-info checkbox-circle">
+                                    <input id="checkbox8" type="checkbox" checked="">
+                                    <label for="checkbox8">
+                                        class: checkbox checkbox-info checkbox-circle
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-primary checkbox-circle">
+                                    <input id="checkbox-9" type="checkbox">
+                                    <label for="checkbox-9">
+                                        class: checkbox checkbox-primary checkbox-circle
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-success checkbox-circle">
+                                    <input id="checkbox-10" type="checkbox" checked="">
+                                    <label for="checkbox-10">
+                                        class: checkbox checkbox-success checkbox-circle
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-warning checkbox-circle">
+                                    <input id="checkbox-11" type="checkbox">
+                                    <label for="checkbox-11">
+                                        class: checkbox checkbox-warning checkbox-circle
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-danger checkbox-circle">
+                                    <input id="checkbox-12" type="checkbox" checked="">
+                                    <label for="checkbox-12">
+                                        class: checkbox checkbox-danger checkbox-circle
+                                    </label>
+                                </div>
+
+                                <div class="checkbox checkbox-dark checkbox-circle">
+                                    <input id="checkbox-15" type="checkbox" checked="">
+                                    <label for="checkbox-15">
+                                        class: checkbox checkbox-dark checkbox-circle
+                                    </label>
+                                </div>
+
+
+                                <p >Checkboxes without label text </p>
+                                <div class="checkbox checkbox-single checkbox-circle">
+                                    <input type="checkbox" id="singleCheckbox11" value="option1" aria-label="Single checkbox One">
+                                    <label></label>
+                                </div>
+                                <div class="checkbox checkbox-primary checkbox-single checkbox-circle">
+                                    <input type="checkbox" id="singleCheckbox21" value="option2" checked="" aria-label="Single checkbox Two">
+                                    <label></label>
+                                </div>
+
+
+                                <p>Inline checkboxes</p>
+                                <div class="checkbox checkbox-inline checkbox-circle">
+                                    <input type="checkbox" id="inlineCheckbox11" value="option1">
+                                    <label for="inlineCheckbox11"> Inline One </label>
+                                </div>
+                                <div class="checkbox checkbox-success checkbox-inline checkbox-circle">
+                                    <input type="checkbox" id="inlineCheckbox21" value="option1" checked="">
+                                    <label for="inlineCheckbox21"> Inline Two </label>
+                                </div>
+                                <div class="checkbox checkbox-primary checkbox-inline checkbox-circle">
+                                    <input type="checkbox" id="inlineCheckbox31" value="option1">
+                                    <label for="inlineCheckbox31"> Inline Three </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+
+                                <h5>Disabled</h5>
+
+                                <p>
+                                    Disabled state also supported.
+                                </p>
+
+                                <div class="checkbox">
+                                    <input id="checkbox9" type="checkbox" disabled="">
+                                    <label for="checkbox9">
+                                        class="checkbox"
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-custom">
+                                    <input id="checkbox10" type="checkbox" disabled="" checked="">
+                                    <label for="checkbox10">
+                                        class="checkbox checkbox-custom"
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-warning checkbox-circle">
+                                    <input id="checkbox110" type="checkbox" disabled="" checked="">
+                                    <label for="checkbox110">
+                                        class="checkbox checkbox-warning checkbox-circle"
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-info">
+                                    <input id="checkbox12" type="checkbox" disabled="" checked="">
+                                    <label for="checkbox12">
+                                        class="checkbox checkbox-info"
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-primary">
+                                    <input id="checkbox13" type="checkbox" disabled="" checked="">
+                                    <label for="checkbox13">
+                                        class="checkbox checkbox-primary" 
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-danger checkbox-circle">
+                                    <input id="checkbox14" type="checkbox" disabled="" checked="">
+                                    <label for="checkbox14">
+                                        class="checkbox checkbox-danger checkbox-circle"
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <h3>Tabla Basica</h3>
+                    <table class="table table-striped ">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                    <h3>Graficas</h3>
+                    <h5>Stacked Bar Chart</h5>
+                    
+                    <div id="morris-bar-stacked" ></div>
+
+                    <h5>Area Chart</h5>
+                    
+                    <div id="morris-area-example" ></div>
+
+                    <h5>Line Chart</h5>
+                    
+                    <div id="morris-line-example"></div>
+                                    
+                    <h5>Bar Chart</h5>
+                   
+                    <div id="morris-bar-example"></div>
+                                    
+                    <h4>Area Chart with Point</h4>
+                    
+                    <div id="morris-area-with-dotted"></div>
+                                    
+                    <h5>Donut Chart</h5>
+                    
+                    <div id="morris-donut-example"></div>
+                    <!--
+                    <div id="website-stats" style="height: 320px; padding: 0px; position: relative;" class="flot-chart"></div>
+                    <div id="website-stats1" style="height: 320px; padding: 0px; position: relative;" class="flot-chart"></div>
+                    <div id="flotRealTime" style="height: 320px; padding: 0px; position: relative;" class="flot-chart"></div>
+                    <div id="donut-chart">
+                        <div id="donut-chart-container" style="height: 320px; padding: 0px; position: relative;" class="flot-chart"></div>
+                    </div>
+                    <div id="pie-chart" style="height: 320px; padding: 0px; position: relative;" class="flot-chart"></div>
+                    <div id="ordered-bars-chart" style="height: 320px; padding: 0px; position: relative;" class="flot-chart"></div>
+                    <div id="line-chart-alt" style="height: 320px; padding: 0px; position: relative;" class="flot-chart"></div>
+                    <div id="combine-chart">
+                        <div id="combine-chart-container" style="height: 320px; padding: 0px; position: relative;" class="flot-chart"></div>
+                    </div>
+                    -->
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <script src="js/jquery.js"></script>
+
+    <!-- Charts Morris -->
+    <script src="js/rafael.js"></script>
+    <script src="js/morris/morris.js"></script>
+    <script src="js/morris/morris.init.js"></script>
+    <!-- end Charts Morris -->    
+
+    <!-- Navigator 
+    <script src="js/navigator.js" async="async"></script>
+    <!-- end Navigator -->
+</body>
+</html>
